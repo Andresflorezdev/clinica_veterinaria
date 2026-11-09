@@ -36,7 +36,7 @@ public class Perro extends Animal implements Vacunable, Asegurable {
 
     @Override
     public String obtenerNumeroPoliza() {
-        return "POL_PERRO-" + nombre;
+        return "POL-PERRO-" + nombre;
     }
 
 }
