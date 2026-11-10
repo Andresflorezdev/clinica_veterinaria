@@ -9,25 +9,9 @@ Sistema en Java que modela los animales y servicios de una clinica veterinaria a
 ```text
 ClinicaVeterinaria/
 |-- .idea/                             # Carpeta generada y traida por IntelliJ IDEA. Contiene la configuracion interna del proyecto en el IDE.
-|   |-- inspectionProfiles/
-|   |-- misc.xml
-|   |-- modules.xml
-|   `-- workspace.xml
+|
 |-- out/                               # Carpeta de salidas generada tras compilar. Almacena los archivos binarios (.class) y se puede borrar o volver a generar en cualquier momento.
-|   `-- production/
-|       `-- ClinicaVeterinaria/
-|           |-- clase_base/
-|           |   `-- Animal.class
-|           |-- Subclases/
-|           |   |-- Perro.class
-|           |   |-- Gato.class
-|           |   |-- Ave.class
-|           |   |-- Conejo.class
-|           |   `-- Clinica.class
-|           |-- Interfaces/
-|           |   |-- Asegurable.class
-|           |   `-- Vacunable.class
-|           `-- Main.class
+|
 |-- src/                               # Carpeta de codigo fuente organizada en paquetes
 |   |-- clase_base/                    # Carpeta que contiene la clase base abstracta
 |   |   `-- Animal.java
