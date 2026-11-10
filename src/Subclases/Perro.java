@@ -8,6 +8,7 @@ import clase_base.Animal;
 public class Perro extends Animal implements Vacunable, Asegurable {
 
     private String raza;
+    private java.util.List<String> vacunas = new java.util.ArrayList<>();
 
     // constructor
     public Perro(String nombre, int edad, String propietario, String raza) {
@@ -21,12 +22,13 @@ public class Perro extends Animal implements Vacunable, Asegurable {
     }
 
     @Override
-    public void registrarVacunas(String nombre) {
+    public void registrarVacuna(String nombre) {
+        vacunas.add(nombre);
     }
 
     @Override
     public int getVacunasAplicadas() {
-        return 0;
+        return vacunas.size();
     }
 
     @Override

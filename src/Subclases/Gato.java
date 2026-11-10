@@ -7,6 +7,7 @@ import clase_base.Animal;
 public class Gato extends Animal implements Vacunable, Asegurable {
 
     private boolean esEsterilizado;
+    private java.util.List<String> vacunas = new java.util.ArrayList<>();
 
     // constructor
     public Gato(String nombre, int edad, String propietario, boolean esEsterilizado) {
@@ -16,21 +17,26 @@ public class Gato extends Animal implements Vacunable, Asegurable {
 
     @Override
     public double calcularCostoConsulta() {
-        return 45000 + (edad * 3000);
+        return 38000;
     }
 
     @Override
-    public void registrarVacunas(String nombre) {
+    public void registrarVacuna(String nombre) {
+        vacunas.add(nombre);
     }
 
     @Override
     public int getVacunasAplicadas() {
-        return 0;
+        return vacunas.size();
     }
 
     @Override
     public double calcularPrimaSeguro() {
-        return edad * 80000;
+        if (esEsterilizado) {
+            return 120000;
+        } else {
+            return 200000;
+        }
     }
 
     @Override

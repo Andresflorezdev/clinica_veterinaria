@@ -1,10 +1,8 @@
 package Subclases;
 
-import Interfaces.Asegurable;
-import Interfaces.Vacunable;
 import clase_base.Animal;
 
-public class Ave extends Animal implements Vacunable, Asegurable {
+public class Ave extends Animal {
 
     private double pesoGramos;
 
@@ -16,25 +14,7 @@ public class Ave extends Animal implements Vacunable, Asegurable {
 
     @Override
     public double calcularCostoConsulta() {
-        return 45000 + (edad * 3000);
+        return 28000 + (pesoGramos * 100);
     }
 
-    @Override
-    public void registrarVacunas(String nombre) {
-    }
-
-    @Override
-    public int getVacunasAplicadas() {
-        return 0;
-    }
-
-    @Override
-    public double calcularPrimaSeguro() {
-        return edad * 80000;
-    }
-
-    @Override
-    public String obtenerNumeroPoliza() {
-        return "POL-AVE-" + nombre;
-    }
 }
