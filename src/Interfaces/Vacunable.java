@@ -1,6 +1,6 @@
 package Interfaces;
 
 public interface Vacunable {
-    void registrarVacunas(String nombre);
+    void registrarVacuna(String nombre);
     int getVacunasAplicadas();
 }

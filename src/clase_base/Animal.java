@@ -22,6 +22,7 @@ public abstract class Animal {
         System.out.println("nombre: " + nombre);
         System.out.println("Edad: " + edad);
         System.out.println("dueño: " + propietario);
+        System.out.println("costo consulta: $" + calcularCostoConsulta());
         System.out.println("\n");
     }
 }
